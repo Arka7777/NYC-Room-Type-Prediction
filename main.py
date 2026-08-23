@@ -42,6 +42,6 @@ def prediction(input_data: InputData):
     prediction = model.predict(row)[0]
     probabilities = model.predict_proba(row)[0].tolist()
     return {
-       "predicted Room Type": prediction,
-        "probabilities": probabilities
-    }
+   "predicted_room_type": prediction,
+   "probabilities": probabilities
+}
